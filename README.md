@@ -18,7 +18,7 @@ Just add the annotation to your `Deployment`:
 
 ```yaml
   annotations:
-    zalando.org/schedule-actions: '[{"schedule": "10 18 * * *", "replicas": "3"}]'
+    nate.team/schedule-actions: '[{"schedule": "10 18 * * *", "replicas": "3"}]'
 ```
 
 The following fields are available:
@@ -37,7 +37,7 @@ metadata:
   labels:
     application: nginx-deployment
   annotations:
-    zalando.org/schedule-actions: |
+    nate.team/schedule-actions: |
       [
         {"schedule": "0 7 * * Mon-Fri", "replicas": "1"},
         {"schedule": "0 19 * * Mon-Fri", "replicas": "0"},

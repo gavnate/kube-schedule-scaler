@@ -43,7 +43,7 @@ def deployments_to_scale():
             f_deployment = str(namespace + "/" + str(deployment))
 
             schedule_actions = parse_schedules(annotations.get(
-                "zalando.org/schedule-actions", "[]"), f_deployment)
+                "nate.team/schedule-actions", "[]"), f_deployment)
 
             if schedule_actions is None or len(schedule_actions) == 0:
                 continue
